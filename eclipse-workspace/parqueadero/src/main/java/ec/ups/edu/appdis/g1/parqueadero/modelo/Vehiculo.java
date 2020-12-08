@@ -1,6 +1,8 @@
 package ec.ups.edu.appdis.g1.parqueadero.modelo;
 
-public class Vehiculo {
+import java.io.Serializable;
+
+public class Vehiculo implements Serializable{
 	private String placa;
 	private String marca;
 	private String color;

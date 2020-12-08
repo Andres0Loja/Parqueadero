@@ -1,6 +1,15 @@
 package ec.ups.edu.appdis.g1.parqueadero.modelo;
 
-public class Cliente {
+import java.io.Serializable;
+
+import javax.persistence.Entity;
+import javax.persistence.Id;
+
+
+@Entity
+public class Cliente implements Serializable{
+	private static final long serialVersionUID=1L;
+	@Id
 	private String dni;
 	private int tipoDocumento;
 	private String nombre;
